@@ -19,6 +19,7 @@ public class SingleLinkedListDemo {
 //        System.out.println(findListIndexNode(singleLinkedList.getHead(),2));
 //        reverseLinkedList(singleLinkedList).list();
         printFromLast(singleLinkedList);
+
     }
 
     /**
@@ -95,21 +96,15 @@ public class SingleLinkedListDemo {
             temp = temp.next;
         }
         for (int i = 0; i < size; i++) {
-            int s = 0;
             HeroNode tm = list.getHead();
             while (true) {
                 if (tm.next == null) {
                     break;
                 }
-                s++;
                 tm = tm.next;
             }
-            HeroNode cur = list.getHead();
-            for (int j = 0; j < s; j++) {
-                cur = cur.next;
-            }
-            result.addNull(cur);
-            list.delete(cur.no);
+            result.addNull(tm);
+            list.delete(tm.no);
         }
         return result;
     }
@@ -131,21 +126,15 @@ public class SingleLinkedListDemo {
         }
 
         for (int i = 0; i < size; i++) {
-            int s = 0;
             HeroNode tm = list.getHead();
             while (true) {
                 if (tm.next == null) {
                     break;
                 }
-                s++;
                 tm = tm.next;
             }
-            HeroNode cur = list.getHead();
-            for (int j = 0; j < s; j++) {
-                cur = cur.next;
-            }
-            System.out.println(cur);
-            list.delete(cur.no);
+            System.out.println(tm);
+            list.delete(tm.no);
         }
 
     }

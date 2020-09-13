@@ -1,117 +1,177 @@
 package test;
 
-import java.util.Arrays;
-
 public class Test {
     public static void main(String[] args) {
-        int[] arr = {99, -2, 33, 23, 6, 0};
-        quickSort(arr,0,arr.length-1);
-        System.out.println(Arrays.toString(arr));
+
+    }
+}
+
+class Node {
+    int value;
+    Node left;
+    Node right;
+
+    public Node(int value) {
+        this.value = value;
     }
 
-    //冒泡排序
-    public static void bubbleSort(int[] arr) {
-        int temp;
-        boolean flag;
-        for (int i = 0; i < arr.length - 1; i++) {
-            flag = false;
-            for (int j = 0; j < arr.length - 1 - i; j++) {
-                if (arr[j] > arr[j + 1]) {
-                    flag = true;
-                    temp = arr[j];
-                    arr[j] = arr[j + 1];
-                    arr[j + 1] = temp;
+    @Override
+    public String toString() {
+        return "Node{" +
+                "value=" + value +
+                '}';
+    }
+
+    /**
+     * 添加节点
+     *
+     * @param node 需要添加进入的节点
+     */
+    public void addNode(Node node) {
+        if (node == null) {
+            return;
+        }
+        if (node.value < this.value) {
+            if (this.left == null) {
+                this.left = node;
+            } else {
+                this.left.addNode(node);
+            }
+        } else {
+            if (this.right == null) {
+                this.right = node;
+            } else {
+                this.right.addNode(node);
+            }
+        }
+    }
+
+    //查找指定值的节点
+    public Node search(int value) {
+        if (value == this.value) {
+            return this;
+        } else if (value < this.value) {
+            if (this.left == null) {
+                return null;
+            }
+            return this.left.search(value);
+        } else {
+            if (this.right == null) {
+                return null;
+            }
+            return this.right.search(value);
+        }
+    }
+
+    //查找指定值的节点的父节点
+    public Node searchParent(int value) {
+        if ((this.right != null && this.right.value == value) || (this.left != null && this.left.value == value)) {
+            return this;
+        } else {
+            if (value < this.value && this.left != null) {
+                return this.left.searchParent(value);
+            } else if (value >= this.value && this.right != null) {
+                return this.right.searchParent(value);
+            } else {
+                return null;
+            }
+        }
+    }
+
+}
+
+class Tree {
+    private Node root;
+
+    public Node getRoot() {
+        return root;
+    }
+
+    public void setRoot(Node root) {
+        this.root = root;
+    }
+
+    public void add(Node node) {
+        if (root == null) {
+            root = node;
+        } else {
+            root.addNode(node);
+        }
+    }
+
+    public Node search(int value) {
+        if (root == null) {
+            return null;
+        } else {
+            return root.search(value);
+        }
+    }
+
+    public Node searchParent(int value) {
+        if (root == null) {
+            return null;
+        } else {
+            return root.searchParent(value);
+        }
+    }
+
+    public int delRightMin(Node rightNode) {
+        Node target = rightNode;
+        while (target.left != null) {
+            target = target.left;
+        }
+        delNode(target.value);
+        return target.value;
+    }
+
+    public void delNode(int value) {
+        if (root == null) {
+            return;
+        } else {
+            Node targetNode = search(value);
+            if (targetNode == null) {
+                return;
+            }
+            Node parentNode = searchParent(value);
+            //要删除的节点是叶子节点
+            if (targetNode.left == null && targetNode.right == null) {
+                if (parentNode.left != null && parentNode.left.value == value) {
+                    parentNode.left = null;
+                } else if (parentNode.right != null && parentNode.right.value == value) {
+                    parentNode.right = null;
                 }
-            }
-            if (!flag) {
-                System.out.println(i);
-                break;
-            }
-        }
-    }
-
-    //选择排序
-    public static void selectSort(int[] arr) {
-        for (int i = 0; i < arr.length - 1; i++) {
-            int min = arr[i];
-            int minIndex = i;
-            for (int j = i; j < arr.length; j++) {
-                if (arr[j] < arr[i]) {
-                    min = arr[j];
-                    minIndex = j;
-                }
-            }
-            arr[minIndex] = arr[i];
-            arr[i] = min;
-        }
-    }
-
-    //插入排序
-    public static void insertSort(int[] arr) {
-        for (int i = 1; i < arr.length; i++) {
-            int j = i - 1;
-            int val = arr[i];
-            while (j >= 0 && val < arr[j]) {
-                arr[j + 1] = arr[j];
-                j--;
-            }
-            arr[j + 1] = val;
-        }
-    }
-
-    //希尔排序
-    public static void shellSort(int[] arr) {
-        for (int gap = arr.length / 2; gap > 0; gap = gap / 2) {
-            for (int i = gap; i < arr.length; i++) {
-                int j = i;
-                int temp = arr[j];
-                if (arr[j] < arr[j - gap]) {
-                    while (j - gap >= 0 && arr[j] < arr[j - gap]) {
-                        arr[j] = arr[j - gap];
-                        j = j - gap;
+            } else if (targetNode.left != null && targetNode.right != null) {//要删除的节点既有左子节点又有右子节点
+                //从右子树中查找最小的节点或者从左子树中查找最大的节点删除并将targetNode的值替换为此值
+                int minNode = delRightMin(targetNode.right);
+                targetNode.value = minNode;
+            } else {//要删除的节点只有左子节点或者只有右子节点
+                if (targetNode.right != null) {
+                    if (parentNode != null) {
+                        //只有右子节点
+                        if (parentNode.left.value == value) {
+                            //是父节点的左子节点
+                            parentNode.left = targetNode.right;
+                        } else {
+                            //是父节点的右子节点
+                            parentNode.right = targetNode.right;
+                        }
+                    } else {
+                        root = targetNode.right;
+                    }
+                } else {
+                    if (parentNode != null) {
+                        if (parentNode.left.value == value) {
+                            parentNode.left = targetNode.left;
+                        } else {
+                            parentNode.right = targetNode.left;
+                        }
+                    } else {
+                        root = targetNode.left;
                     }
                 }
-                arr[j] = temp;
             }
-        }
-    }
-
-    //快速排序
-    public static void quickSort(int[] arr, int left, int right) {
-        int l = left;
-        int r = right;
-        int pivot = arr[(l + r) / 2];
-        int temp;
-        while (l < r){
-            while (arr[l] < pivot){
-                l ++;
-            }
-            while (arr[r] > pivot){
-                r --;
-            }
-            if (l >= r){
-                break;
-            }
-            temp = arr[l];
-            arr[l] = arr[r];
-            arr[r] = temp;
-            if (arr[l] == pivot){
-                r --;
-            }
-            if (arr[r] == pivot){
-                l ++;
-            }
-        }
-        if (r == l){
-            l = l+1;
-            r = r-1;
-        }
-        if (left<r){
-            quickSort(arr, left, r);
-        }
-        if (right > l){
-            quickSort(arr, l, right);
         }
 
     }
 }
+

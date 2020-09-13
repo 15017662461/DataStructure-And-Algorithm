@@ -1,7 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="551e4f2f-4e8f-48ab-9997-095d59f0654e" name="默认更改列表" comment="" />
+    <list default="true" id="551e4f2f-4e8f-48ab-9997-095d59f0654e" name="默认更改列表" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/test/HeroNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/test/HeroNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/test/SingleLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/test/SingleLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/test/SingleLinkedListDemo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/test/SingleLinkedListDemo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/test/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/test/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/test/test/graph/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/test/test/graph/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/SingleLinkedListDemo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/SingleLinkedListDemo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../算法/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../算法/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../算法/out/production/算法/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/../算法/out/production/算法/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../算法/out/production/算法/horse/HorseChessboard.class" beforeDir="false" afterPath="$PROJECT_DIR$/../算法/out/production/算法/horse/HorseChessboard.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../算法/src/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/../算法/src/Test.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +32,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
     <exe-path />
@@ -31,6 +49,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1gatQ4WL4L0C8EVLgOVqUfdXYfm" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -38,9 +57,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -51,14 +71,36 @@
       <recent name="test.sort" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="Graph" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.graph.Graph" />
+  <component name="RunManager" selected="Application.Test">
+    <configuration name="SingleLinkedListDemo" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.SingleLinkedListDemo" />
       <module name="test" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.SingleLinkedListDemo" />
+      <item itemvalue="Application.Test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Test" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -85,6 +127,11 @@
       <workItem from="1598871316664" duration="4017000" />
       <workItem from="1598929332474" duration="6953000" />
       <workItem from="1598960378129" duration="550000" />
+      <workItem from="1599292462931" duration="2355000" />
+      <workItem from="1599634045262" duration="2675000" />
+      <workItem from="1599647446610" duration="4030000" />
+      <workItem from="1599905757654" duration="462000" />
+      <workItem from="1599916135421" duration="35000" />
     </task>
     <servers />
   </component>
@@ -92,38 +139,42 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1598936101025">
+    <state x="834" y="87" key="#Test" timestamp="1599293763638">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1598936101025" />
-    <state x="910" y="191" key="#com.intellij.ide.util.MemberChooser" timestamp="1598860873219">
+    <state x="834" y="87" key="#Test/0.0.1536.824@0.0.1536.824" timestamp="1599293763638" />
+    <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1599293752558">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="910" y="191" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1598860873219" />
-    <state x="497" y="194" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1598936100237">
+    <state x="222" y="66" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1599293752558" />
+    <state x="910" y="191" key="#com.intellij.ide.util.MemberChooser" timestamp="1599649092487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="497" y="194" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1598936100237" />
-    <state x="725" y="157" key="FileChooserDialogImpl" timestamp="1598960927708">
+    <state x="910" y="191" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1599649092487" />
+    <state x="497" y="194" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1599293749367">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="725" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598960927708" />
-    <state width="676" height="245" key="GridCell.Tab.0.bottom" timestamp="1598940375387">
+    <state x="497" y="194" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1599293749367" />
+    <state x="725" y="157" key="FileChooserDialogImpl" timestamp="1599636735019">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="676" height="245" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1598940375387" />
-    <state width="676" height="245" key="GridCell.Tab.0.center" timestamp="1598940375387">
+    <state x="725" y="157" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1599636735019" />
+    <state width="1491" height="240" key="GridCell.Tab.0.bottom" timestamp="1599636736807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="676" height="245" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1598940375387" />
-    <state width="676" height="245" key="GridCell.Tab.0.left" timestamp="1598940375387">
+    <state width="1491" height="240" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1599636736807" />
+    <state width="1491" height="240" key="GridCell.Tab.0.center" timestamp="1599636736807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="676" height="245" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1598940375387" />
-    <state width="676" height="245" key="GridCell.Tab.0.right" timestamp="1598940375387">
+    <state width="1491" height="240" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1599636736807" />
+    <state width="1491" height="240" key="GridCell.Tab.0.left" timestamp="1599636736807">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="676" height="245" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1598940375387" />
+    <state width="1491" height="240" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1599636736807" />
+    <state width="1491" height="240" key="GridCell.Tab.0.right" timestamp="1599636736807">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1491" height="240" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1599636736807" />
     <state width="676" height="172" key="GridCell.Tab.1.bottom" timestamp="1598605818601">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -140,10 +191,14 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="676" height="172" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1598605818601" />
-    <state x="466" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1598960406835">
+    <state x="466" y="235" key="com.intellij.ide.util.TipDialog" timestamp="1599916135946">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="466" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1598960406835" />
+    <state x="466" y="235" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1599916135946" />
+    <state x="561" y="328" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1599634301021">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="561" y="328" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1599634301021" />
     <state x="354" y="26" key="new project wizard" timestamp="1598960929815">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
